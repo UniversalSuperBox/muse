@@ -563,6 +563,7 @@ export default class {
         .noVideo()
         .audioCodec('libopus')
         .outputFormat('webm')
+        .addOutputOptions(['-filter:a', 'loudnorm'])
         .on('error', error => {
           if (!hasReturnedStreamClosed) {
             reject(error);

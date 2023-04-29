@@ -1,4 +1,4 @@
-FROM node:18.7.0-slim AS base
+FROM node:18.16.0-slim AS base
 
 # Install ffmpeg
 RUN apt-get update && \
